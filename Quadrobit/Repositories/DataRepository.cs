@@ -43,10 +43,5 @@ namespace Quadrobit.Repositories
         {
             return await _connection.Table<DataEntry>().ToListAsync();
         }
-
-        public async Task RemovetAllEntries()
-        {
-            await _connection.DeleteAllAsync<DataEntry>();
-        }
     }
 }
