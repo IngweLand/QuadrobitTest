@@ -41,6 +41,7 @@ namespace Quadrobit.ViewModels
 
         private async Task logout()
         {
+            await _apiService.Logout();
             await _navigationService.Close(this);
         }
 
